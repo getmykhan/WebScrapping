@@ -1,7 +1,14 @@
 from urllib.request import urlopen
+import time
 
-try:
-    html = urlopen("http://www.small-biga-data.com/savings-bank.txt")
-    print(html.read())
-except:
-    print ("Sorry File does not exist!")
+
+
+def run():
+    try:
+        html = urlopen("http://www.small-big-data.com/savings-bank.txt")
+        time.sleep(2)
+        return (html.read())
+    except:
+        print ("Sorry File does not exist!")
+
+print(run())
