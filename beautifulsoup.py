@@ -21,3 +21,6 @@ for para in soup.find_all('p'):
 
 for i in soup.find_all('a'):
     print(i.get('href'))
+
+nav = soup.nav
+print(nav)
