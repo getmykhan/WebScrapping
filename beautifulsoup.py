@@ -23,4 +23,8 @@ for i in soup.find_all('a'):
     print(i.get('href'))
 
 nav = soup.nav
-print(nav)
+## print(nav)
+
+table = soup.table
+
+print(table.tr.th.text)
